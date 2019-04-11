@@ -1,0 +1,27 @@
+
+<form action="/students" method="POST">
+
+  <label for="first-name">First Name:</label>
+  <input type="text" id="first-name" name="first_name">
+
+  <label for="second-name">Last Name:</label>
+  <input type="text" id="second-name" name="second_name">
+
+  <label for="houses">Select a house:</label>
+  <select id="houses" name="house_id">
+    <option value="" selected disabled>Select a house</option>
+    <% @houses.each do |house| %>
+    <option value="<%= house.id%>"><%= house.name %></option>
+    <% end %>
+    <!-- <option value="Gryffindor">Gryffindor</option>
+    <option value="Hufflepuff">Hufflepuff</option>
+    <option value="Slytherin">Slytherin</option>
+    <option value="Ravenclaw">Ravenclaw</option> -->
+  </select>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age">
+
+  <input type="submit" value="Add student">
+
+</form>

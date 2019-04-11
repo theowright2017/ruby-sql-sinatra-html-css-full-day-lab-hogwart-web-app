@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: fantasy;
+  text-align:center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+/*  navbar   */
+nav {
+  margin-bottom: 60px;
+}
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #9c1203;
+  justify-content: flex-end;
+}
+
+li {
+  border-left: 1px solid white;
+}
+
+a {
+  display: block;
+  padding: 10px 20px 5px 20px;
+  background-color: #9c1203;
+  text-decoration: none;
+  color: #e3a000;
+  font-size: 18px;
+}
+
+a:hover{
+  background-color: blue;
+  color:  white;
+  text-transform: uppercase;
+}
+
+/*  houses */
+
+.house {
+
+  margin: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
